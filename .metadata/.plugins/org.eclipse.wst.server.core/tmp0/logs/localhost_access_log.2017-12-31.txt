@@ -18,3 +18,7 @@
 0:0:0:0:0:0:0:1 - - [31/Dec/2017:22:36:47 +0900] "GET /HomePageJSP/LoginPage.jsp HTTP/1.1" 200 653
 0:0:0:0:0:0:0:1 - - [31/Dec/2017:22:37:23 +0900] "GET /HomePageJSP/LoginPage.jsp HTTP/1.1" 200 672
 0:0:0:0:0:0:0:1 - - [31/Dec/2017:22:37:23 +0900] "GET /HomePageJSP/black HTTP/1.1" 404 1028
+0:0:0:0:0:0:0:1 - - [31/Dec/2017:23:02:17 +0900] "GET /HomePageJSP/LoginPage.jsp HTTP/1.1" 200 668
+0:0:0:0:0:0:0:1 - - [31/Dec/2017:23:02:34 +0900] "GET /HomePageJSP/LoginPage.jsp HTTP/1.1" 200 660
+0:0:0:0:0:0:0:1 - - [31/Dec/2017:23:02:51 +0900] "POST /HomePageJSP/Logincheck.jsp HTTP/1.1" 200 273
+0:0:0:0:0:0:0:1 - - [31/Dec/2017:23:02:59 +0900] "POST /HomePageJSP/Logincheck.jsp HTTP/1.1" 200 281
