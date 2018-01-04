@@ -1,0 +1,4 @@
+127.0.0.1 - - [03/Jan/2018:12:28:25 +0900] "GET / HTTP/1.1" 404 1069
+0:0:0:0:0:0:0:1 - - [03/Jan/2018:12:28:26 +0900] "GET /HomePageJSP/NewFile.jsp HTTP/1.1" 200 261
+0:0:0:0:0:0:0:1 - - [03/Jan/2018:12:28:54 +0900] "GET /HomePageJSP/LoginPage.jsp HTTP/1.1" 200 660
+0:0:0:0:0:0:0:1 - - [03/Jan/2018:12:29:00 +0900] "POST /HomePageJSP/Logincheck.jsp HTTP/1.1" 200 285
