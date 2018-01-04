@@ -1,0 +1,48 @@
+import java.sql.*;
+
+public class DBconn {
+	
+	private static Connection con;
+	private Statement st;
+	private ResultSet rs;
+	
+	String driver = "com.mysql.jdbc.Driver";
+    String url = "jdbc:mysql://localhost:3306/homepage";
+    String uid = "root";
+    String upw = "1234";
+	
+	
+	public void DbConnetion() {
+		try {
+			Class.forName(driver);
+			con = DriverManager.getConnection(url,uid,upw);			
+		}catch(Exception e) {
+			System.out.println(e.toString());
+		}
+	}
+	
+	public String DbSelect(String name) {
+		String str = "";
+		try {
+			st = con.createStatement();
+			
+			if(st.execute("SELECT * FROM memberinfo WHERE ID = "+name)) {
+				rs = st.getResultSet();
+			}
+			while(rs.next()) {
+				str = rs.getNString(1);
+			}
+			
+			
+			rs.close();
+			st.close();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return str;
+	}
+	
+}
