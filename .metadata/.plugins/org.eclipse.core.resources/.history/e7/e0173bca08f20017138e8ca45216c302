@@ -24,7 +24,7 @@ aorem ipsum dolor sit amet ${3+4} 11123123123123213
  	<td>
 	 <input type="text" name='id' maxlength="10" size="10">
  	</td>
- </tr>                                                                           
+ </tr>
  <tr>
  	<td>
  	<input type="password" name="pass" maxlength="10" size="10">

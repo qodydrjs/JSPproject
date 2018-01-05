@@ -7,14 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="Logincheck.jsp">
- <input type="text" name='id'>
- <br>
- <input type="password" name="pass">
- 
- <input type="submit" value="Àü¼Û">
- 
-</form>
 
 </body>
 </html>

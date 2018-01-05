@@ -22,18 +22,18 @@ aorem ipsum dolor sit amet ${3+4} 11123123123123213
 <table class="table table-hover"> 
  <tr>
  	<td>
-	 <input type="text" name='id' maxlength="10" width="10">
+	 <input type="text" name='id' maxlength="10" size="10">
  	</td>
- </tr>
+ </tr>                                                                           
  <tr>
- 	<td width="">
- 	<input type="password" name="pass" maxlength="10" width="10">
+ 	<td>
+ 	<input type="password" name="pass" maxlength="10" size="10">
  	</td>
  </tr>
  <tr>
  	<td>
- 	 <input class="btn btn-primary btn-lg" type="submit" value="전송">
- 	 <input class="btn btn-danger btn-lg" type="reset" value="Reset">
+ 	 <input class="btn btn-primary btn-lg" size="5" type="submit" value="전송">
+ 	 <input class="btn btn-danger btn-lg" size="5" type="reset" value="Reset">
  	</td>
  </tr>
 
