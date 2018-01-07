@@ -1,0 +1,24 @@
+import java.sql.*;
+
+public class DBconn {
+	
+	private static Connection con;
+	private Statement st;
+	private ResultSet rs;
+	
+	String driver = "com.mysql.jdbc.Driver";
+    String url = "jdbc:mysql://localhost:3306/homepage";
+    String uid = "root";
+    String upw = "1234";
+	
+	
+	void DbConnetion() {
+		try {
+			con = DriverManager.getConnection(url,uid,upw);
+			
+		}catch(Exception e) {
+			System.out.println(e.toString());
+		}
+	}
+	
+}
