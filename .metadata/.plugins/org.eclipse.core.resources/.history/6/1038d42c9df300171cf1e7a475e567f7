@@ -1,4 +1,3 @@
-<%@page import="java.util.Enumeration"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
     <%@ page import ="java.net.URLEncoder" %>
@@ -15,14 +14,8 @@
 	String e_search = URLEncoder.encode(search, "euc-kr");
 	response.sendRedirect(url+e_search); */
 	
-	String headerName=null;
 	
-	Enumeration context = request.getHeaderNames();
-	while(context.hasMoreElements()){
-		headerName= context.nextElement().toString();
-		out.println(request.getHeader(headerName));
-		out.println("<br>");
-	}
+	request.getContentType();
 	
 %>
 </body>

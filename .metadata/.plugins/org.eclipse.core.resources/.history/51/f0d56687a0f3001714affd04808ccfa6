@@ -15,13 +15,11 @@
 	String e_search = URLEncoder.encode(search, "euc-kr");
 	response.sendRedirect(url+e_search); */
 	
-	String headerName=null;
 	
 	Enumeration context = request.getHeaderNames();
 	while(context.hasMoreElements()){
-		headerName= context.nextElement().toString();
-		out.println(request.getHeader(headerName));
-		out.println("<br>");
+		out.println(context.nextElement().toString());
+		out.println(request.getHeader(context.toString()));
 	}
 	
 %>

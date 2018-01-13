@@ -1,4 +1,3 @@
-<%@page import="java.util.Enumeration"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
     <%@ page import ="java.net.URLEncoder" %>
@@ -10,20 +9,10 @@
 </head>
 <body>
 <%
-/* 	String search = "JSP프로그래밍";
+	String search = "JSP프로그래밍";
 	String url = "http://search.naver.com/search.naver?where=nexearch&query=";
 	String e_search = URLEncoder.encode(search, "euc-kr");
-	response.sendRedirect(url+e_search); */
-	
-	String headerName=null;
-	
-	Enumeration context = request.getHeaderNames();
-	while(context.hasMoreElements()){
-		headerName= context.nextElement().toString();
-		out.println(request.getHeader(headerName));
-		out.println("<br>");
-	}
-	
+	response.sendRedirect(url+e_search);
 %>
 </body>
 </html>

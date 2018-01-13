@@ -21,7 +21,7 @@
 	while(context.hasMoreElements()){
 		headerName= context.nextElement().toString();
 		out.println(request.getHeader(headerName));
-		out.println("<br>");
+		out.println("  ");
 	}
 	
 %>
